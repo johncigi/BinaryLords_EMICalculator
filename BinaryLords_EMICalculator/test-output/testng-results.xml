@@ -2,34 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="8" total="38" passed="30">
   <reporter-output>
   </reporter-output>
-  <suite name="Chrome_Suite" duration-ms="0" started-at="2020-11-28T02:28:03Z" finished-at="2020-11-28T02:28:03Z">
+  <suite name="Chrome_Suite" duration-ms="0" started-at="2020-11-30T03:18:35Z" finished-at="2020-11-30T03:18:35Z">
     <groups>
     </groups>
   </suite> <!-- Chrome_Suite -->
-  <suite name="Smoke_Suite" duration-ms="34619" started-at="2020-11-28T02:25:38Z" finished-at="2020-11-28T02:26:13Z">
+  <suite name="Smoke_Suite" duration-ms="33938" started-at="2020-11-30T03:16:47Z" finished-at="2020-11-30T03:17:21Z">
     <groups>
     </groups>
-    <test name="Smoke_Test" duration-ms="34619" started-at="2020-11-28T02:25:38Z" finished-at="2020-11-28T02:26:13Z">
-      <class name="tests.TS_HomeLoan">
-        <test-method status="PASS" signature="TC_homeLoanSelect()[pri:5, instance:tests.TS_HomeLoan@49d904ec]" name="TC_homeLoanSelect" duration-ms="492" started-at="2020-11-28T07:55:44Z" finished-at="2020-11-28T07:55:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_homeLoanSelect -->
-        <test-method status="PASS" signature="TC_readHomeLoanData()[pri:6, instance:tests.TS_HomeLoan@49d904ec]" name="TC_readHomeLoanData" duration-ms="2191" started-at="2020-11-28T07:55:45Z" finished-at="2020-11-28T07:55:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_readHomeLoanData -->
-        <test-method status="PASS" signature="TC_ScrollDown()[pri:7, instance:tests.TS_HomeLoan@49d904ec]" name="TC_ScrollDown" duration-ms="88" started-at="2020-11-28T07:55:47Z" finished-at="2020-11-28T07:55:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_ScrollDown -->
-        <test-method status="PASS" signature="TC_YearWiseData()[pri:8, instance:tests.TS_HomeLoan@49d904ec]" name="TC_YearWiseData" duration-ms="823" started-at="2020-11-28T07:55:48Z" finished-at="2020-11-28T07:55:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_YearWiseData -->
-      </class> <!-- tests.TS_HomeLoan -->
-      <class name="tests.TS_CarLoan">
-        <test-method status="PASS" signature="openWebsite(java.lang.String)[pri:0, instance:tests.TS_CarLoan@3ba9ad43]" name="openWebsite" is-config="true" duration-ms="12548" started-at="2020-11-28T07:55:26Z" finished-at="2020-11-28T07:55:38Z">
+    <test name="Smoke_Test" duration-ms="33938" started-at="2020-11-30T03:16:47Z" finished-at="2020-11-30T03:17:21Z">
+      <class name="testScenarios.TS_CarLoan">
+        <test-method status="PASS" signature="openWebsite(java.lang.String)[pri:0, instance:testScenarios.TS_CarLoan@3ba9ad43]" name="openWebsite" is-config="true" duration-ms="10813" started-at="2020-11-30T08:46:36Z" finished-at="2020-11-30T08:46:47Z">
           <params>
             <param index="0">
               <value>
@@ -40,73 +22,91 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openWebsite -->
-        <test-method status="PASS" signature="TC_initiate()[pri:0, instance:tests.TS_CarLoan@3ba9ad43]" name="TC_initiate" is-config="true" duration-ms="2" started-at="2020-11-28T07:55:39Z" finished-at="2020-11-28T07:55:39Z">
+        <test-method status="PASS" signature="TC_initiate()[pri:0, instance:testScenarios.TS_CarLoan@3ba9ad43]" name="TC_initiate" is-config="true" duration-ms="2" started-at="2020-11-30T08:46:47Z" finished-at="2020-11-30T08:46:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_initiate -->
-        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:tests.TS_HomeLoan@49d904ec]" name="TC_initiateClasses" is-config="true" duration-ms="2" started-at="2020-11-28T07:55:39Z" finished-at="2020-11-28T07:55:39Z">
+        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:testScenarios.TS_HomeLoan@49d904ec]" name="TC_initiateClasses" is-config="true" duration-ms="1" started-at="2020-11-30T08:46:47Z" finished-at="2020-11-30T08:46:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_initiateClasses -->
-        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:tests.TS_UICheck@48e4374]" name="TC_initiateClasses" is-config="true" duration-ms="6" started-at="2020-11-28T07:55:39Z" finished-at="2020-11-28T07:55:39Z">
+        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:testScenarios.TS_UICheck@48e4374]" name="TC_initiateClasses" is-config="true" duration-ms="2" started-at="2020-11-30T08:46:47Z" finished-at="2020-11-30T08:46:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_initiateClasses -->
-        <test-method status="PASS" signature="TC_CarLoanSelect()[pri:1, instance:tests.TS_CarLoan@3ba9ad43]" name="TC_CarLoanSelect" duration-ms="548" started-at="2020-11-28T07:55:39Z" finished-at="2020-11-28T07:55:39Z">
+        <test-method status="PASS" signature="TC_CarLoanSelect()[pri:1, instance:testScenarios.TS_CarLoan@3ba9ad43]" name="TC_CarLoanSelect" duration-ms="474" started-at="2020-11-30T08:46:47Z" finished-at="2020-11-30T08:46:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CarLoanSelect -->
-        <test-method status="PASS" signature="TC_EnterDetails()[pri:2, instance:tests.TS_CarLoan@3ba9ad43]" name="TC_EnterDetails" duration-ms="2034" started-at="2020-11-28T07:55:40Z" finished-at="2020-11-28T07:55:42Z">
+        <test-method status="PASS" signature="TC_EnterDetails()[pri:2, instance:testScenarios.TS_CarLoan@3ba9ad43]" name="TC_EnterDetails" duration-ms="1968" started-at="2020-11-30T08:46:48Z" finished-at="2020-11-30T08:46:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_EnterDetails -->
-        <test-method status="PASS" signature="TC_SelectMonth()[pri:3, instance:tests.TS_CarLoan@3ba9ad43]" name="TC_SelectMonth" duration-ms="843" started-at="2020-11-28T07:55:42Z" finished-at="2020-11-28T07:55:43Z">
+        <test-method status="PASS" signature="TC_SelectMonth()[pri:3, instance:testScenarios.TS_CarLoan@3ba9ad43]" name="TC_SelectMonth" duration-ms="1196" started-at="2020-11-30T08:46:50Z" finished-at="2020-11-30T08:46:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SelectMonth -->
-        <test-method status="PASS" signature="TC_DisplayResult()[pri:4, instance:tests.TS_CarLoan@3ba9ad43]" name="TC_DisplayResult" duration-ms="1496" started-at="2020-11-28T07:55:43Z" finished-at="2020-11-28T07:55:44Z">
+        <test-method status="PASS" signature="TC_DisplayResult()[pri:4, instance:testScenarios.TS_CarLoan@3ba9ad43]" name="TC_DisplayResult" duration-ms="1136" started-at="2020-11-30T08:46:51Z" finished-at="2020-11-30T08:46:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_DisplayResult -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:tests.TS_CarLoan@3ba9ad43]" name="exitBrowser" is-config="true" duration-ms="1560" started-at="2020-11-28T07:56:14Z" finished-at="2020-11-28T07:56:15Z">
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:testScenarios.TS_CarLoan@3ba9ad43]" name="exitBrowser" is-config="true" duration-ms="1484" started-at="2020-11-30T08:47:21Z" finished-at="2020-11-30T08:47:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exitBrowser -->
-      </class> <!-- tests.TS_CarLoan -->
-      <class name="tests.TS_UICheck">
-        <test-method status="PASS" signature="TC_SelectLoanCalculator()[pri:9, instance:tests.TS_UICheck@48e4374]" name="TC_SelectLoanCalculator" duration-ms="7674" started-at="2020-11-28T07:55:49Z" finished-at="2020-11-28T07:55:56Z">
+      </class> <!-- testScenarios.TS_CarLoan -->
+      <class name="testScenarios.TS_UICheck">
+        <test-method status="PASS" signature="TC_SelectLoanCalculator()[pri:9, instance:testScenarios.TS_UICheck@48e4374]" name="TC_SelectLoanCalculator" duration-ms="6769" started-at="2020-11-30T08:46:57Z" finished-at="2020-11-30T08:47:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SelectLoanCalculator -->
-        <test-method status="PASS" signature="TC_EMICalculator()[pri:10, instance:tests.TS_UICheck@48e4374]" name="TC_EMICalculator" duration-ms="5690" started-at="2020-11-28T07:55:57Z" finished-at="2020-11-28T07:56:02Z">
+        <test-method status="PASS" signature="TC_EMICalculator()[pri:10, instance:testScenarios.TS_UICheck@48e4374]" name="TC_EMICalculator" duration-ms="5366" started-at="2020-11-30T08:47:04Z" finished-at="2020-11-30T08:47:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_EMICalculator -->
-        <test-method status="PASS" signature="TC_LoanAmountCalculator()[pri:11, instance:tests.TS_UICheck@48e4374]" name="TC_LoanAmountCalculator" duration-ms="5325" started-at="2020-11-28T07:56:02Z" finished-at="2020-11-28T07:56:08Z">
+        <test-method status="PASS" signature="TC_LoanAmountCalculator()[pri:11, instance:testScenarios.TS_UICheck@48e4374]" name="TC_LoanAmountCalculator" duration-ms="5689" started-at="2020-11-30T08:47:09Z" finished-at="2020-11-30T08:47:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LoanAmountCalculator -->
-        <test-method status="PASS" signature="TC_LoanTenureCalculator()[pri:12, instance:tests.TS_UICheck@48e4374]" name="TC_LoanTenureCalculator" duration-ms="5151" started-at="2020-11-28T07:56:08Z" finished-at="2020-11-28T07:56:13Z">
+        <test-method status="PASS" signature="TC_LoanTenureCalculator()[pri:12, instance:testScenarios.TS_UICheck@48e4374]" name="TC_LoanTenureCalculator" duration-ms="5154" started-at="2020-11-30T08:47:15Z" finished-at="2020-11-30T08:47:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LoanTenureCalculator -->
-      </class> <!-- tests.TS_UICheck -->
+      </class> <!-- testScenarios.TS_UICheck -->
+      <class name="testScenarios.TS_HomeLoan">
+        <test-method status="PASS" signature="TC_homeLoanSelect()[pri:5, instance:testScenarios.TS_HomeLoan@49d904ec]" name="TC_homeLoanSelect" duration-ms="486" started-at="2020-11-30T08:46:53Z" finished-at="2020-11-30T08:46:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_homeLoanSelect -->
+        <test-method status="PASS" signature="TC_readHomeLoanData()[pri:6, instance:testScenarios.TS_HomeLoan@49d904ec]" name="TC_readHomeLoanData" duration-ms="2212" started-at="2020-11-30T08:46:53Z" finished-at="2020-11-30T08:46:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_readHomeLoanData -->
+        <test-method status="PASS" signature="TC_ScrollDown()[pri:7, instance:testScenarios.TS_HomeLoan@49d904ec]" name="TC_ScrollDown" duration-ms="101" started-at="2020-11-30T08:46:56Z" finished-at="2020-11-30T08:46:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ScrollDown -->
+        <test-method status="PASS" signature="TC_YearWiseData()[pri:8, instance:testScenarios.TS_HomeLoan@49d904ec]" name="TC_YearWiseData" duration-ms="834" started-at="2020-11-30T08:46:56Z" finished-at="2020-11-30T08:46:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_YearWiseData -->
+      </class> <!-- testScenarios.TS_HomeLoan -->
     </test> <!-- Smoke_Test -->
   </suite> <!-- Smoke_Suite -->
-  <suite name="Firefox_Suite" duration-ms="0" started-at="2020-11-28T02:28:03Z" finished-at="2020-11-28T02:28:03Z">
+  <suite name="Firefox_Suite" duration-ms="0" started-at="2020-11-30T03:18:35Z" finished-at="2020-11-30T03:18:35Z">
     <groups>
     </groups>
   </suite> <!-- Firefox_Suite -->
-  <suite name="Hackathon_DataDriver" duration-ms="0" started-at="2020-11-28T02:28:03Z" finished-at="2020-11-28T02:28:03Z">
+  <suite name="Hackathon_DataDriver" duration-ms="0" started-at="2020-11-30T03:18:35Z" finished-at="2020-11-30T03:18:35Z">
     <groups>
     </groups>
   </suite> <!-- Hackathon_DataDriver -->
-  <suite name="Regression_Suite (0)" duration-ms="3467" started-at="2020-11-28T02:27:58Z" finished-at="2020-11-28T02:28:02Z">
+  <suite name="Regression_Suite (0)" duration-ms="3217" started-at="2020-11-30T03:18:30Z" finished-at="2020-11-30T03:18:34Z">
     <groups>
     </groups>
-    <test name="Regresion_Test" duration-ms="3467" started-at="2020-11-28T02:27:58Z" finished-at="2020-11-28T02:28:02Z">
-      <class name="tests.TS_PersonalLoan">
-        <test-method status="PASS" signature="openWebsite(java.lang.String)[pri:0, instance:tests.TS_PersonalLoan@3f197a46]" name="openWebsite" is-config="true" duration-ms="28765" started-at="2020-11-28T07:57:29Z" finished-at="2020-11-28T07:57:58Z">
+    <test name="Regresion_Test" duration-ms="3217" started-at="2020-11-30T03:18:30Z" finished-at="2020-11-30T03:18:34Z">
+      <class name="testScenarios.TS_PersonalLoan">
+        <test-method status="PASS" signature="openWebsite(java.lang.String)[pri:0, instance:testScenarios.TS_PersonalLoan@3f197a46]" name="openWebsite" is-config="true" duration-ms="9514" started-at="2020-11-30T08:48:21Z" finished-at="2020-11-30T08:48:30Z">
           <params>
             <param index="0">
               <value>
@@ -117,35 +117,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openWebsite -->
-        <test-method status="PASS" signature="TC_homeLoanSelect()[pri:1, instance:tests.TS_PersonalLoan@3f197a46]" name="TC_homeLoanSelect" duration-ms="757" started-at="2020-11-28T07:57:58Z" finished-at="2020-11-28T07:57:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_homeLoanSelect -->
-        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:tests.TS_PersonalLoan@3f197a46]" name="TC_initiateClasses" is-config="true" duration-ms="0" started-at="2020-11-28T07:57:58Z" finished-at="2020-11-28T07:57:58Z">
+        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:testScenarios.TS_PersonalLoan@3f197a46]" name="TC_initiateClasses" is-config="true" duration-ms="1" started-at="2020-11-30T08:48:30Z" finished-at="2020-11-30T08:48:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_initiateClasses -->
-        <test-method status="PASS" signature="TC_EnterDetails()[pri:2, instance:tests.TS_PersonalLoan@3f197a46]" name="TC_EnterDetails" duration-ms="2087" started-at="2020-11-28T07:57:59Z" finished-at="2020-11-28T07:58:01Z">
+        <test-method status="PASS" signature="TC_homeLoanSelect()[pri:1, instance:testScenarios.TS_PersonalLoan@3f197a46]" name="TC_homeLoanSelect" duration-ms="707" started-at="2020-11-30T08:48:30Z" finished-at="2020-11-30T08:48:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_homeLoanSelect -->
+        <test-method status="PASS" signature="TC_EnterDetails()[pri:2, instance:testScenarios.TS_PersonalLoan@3f197a46]" name="TC_EnterDetails" duration-ms="1940" started-at="2020-11-30T08:48:31Z" finished-at="2020-11-30T08:48:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_EnterDetails -->
-        <test-method status="PASS" signature="TC_ScrollDown()[pri:3, instance:tests.TS_PersonalLoan@3f197a46]" name="TC_ScrollDown" duration-ms="118" started-at="2020-11-28T07:58:01Z" finished-at="2020-11-28T07:58:02Z">
+        <test-method status="PASS" signature="TC_ScrollDown()[pri:3, instance:testScenarios.TS_PersonalLoan@3f197a46]" name="TC_ScrollDown" duration-ms="151" started-at="2020-11-30T08:48:33Z" finished-at="2020-11-30T08:48:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_ScrollDown -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:tests.TS_PersonalLoan@3f197a46]" name="exitBrowser" is-config="true" duration-ms="1527" started-at="2020-11-28T07:58:02Z" finished-at="2020-11-28T07:58:03Z">
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:testScenarios.TS_PersonalLoan@3f197a46]" name="exitBrowser" is-config="true" duration-ms="1487" started-at="2020-11-30T08:48:34Z" finished-at="2020-11-30T08:48:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exitBrowser -->
-      </class> <!-- tests.TS_PersonalLoan -->
+      </class> <!-- testScenarios.TS_PersonalLoan -->
     </test> <!-- Regresion_Test -->
   </suite> <!-- Regression_Suite (0) -->
-  <suite name="Regression_Suite" duration-ms="3107" started-at="2020-11-28T02:26:34Z" finished-at="2020-11-28T02:26:37Z">
+  <suite name="Regression_Suite" duration-ms="2960" started-at="2020-11-30T03:17:33Z" finished-at="2020-11-30T03:17:36Z">
     <groups>
     </groups>
-    <test name="Regresion_Test" duration-ms="3107" started-at="2020-11-28T02:26:34Z" finished-at="2020-11-28T02:26:37Z">
-      <class name="tests.TS_PersonalLoan">
-        <test-method status="PASS" signature="openWebsite(java.lang.String)[pri:0, instance:tests.TS_PersonalLoan@6a400542]" name="openWebsite" is-config="true" duration-ms="18966" started-at="2020-11-28T07:56:15Z" finished-at="2020-11-28T07:56:34Z">
+    <test name="Regresion_Test" duration-ms="2960" started-at="2020-11-30T03:17:33Z" finished-at="2020-11-30T03:17:36Z">
+      <class name="testScenarios.TS_PersonalLoan">
+        <test-method status="PASS" signature="openWebsite(java.lang.String)[pri:0, instance:testScenarios.TS_PersonalLoan@6a400542]" name="openWebsite" is-config="true" duration-ms="10558" started-at="2020-11-30T08:47:23Z" finished-at="2020-11-30T08:47:33Z">
           <params>
             <param index="0">
               <value>
@@ -156,53 +156,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openWebsite -->
-        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:tests.TS_PersonalLoan@6a400542]" name="TC_initiateClasses" is-config="true" duration-ms="1" started-at="2020-11-28T07:56:34Z" finished-at="2020-11-28T07:56:34Z">
+        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:testScenarios.TS_PersonalLoan@6a400542]" name="TC_initiateClasses" is-config="true" duration-ms="2" started-at="2020-11-30T08:47:33Z" finished-at="2020-11-30T08:47:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_initiateClasses -->
-        <test-method status="PASS" signature="TC_homeLoanSelect()[pri:1, instance:tests.TS_PersonalLoan@6a400542]" name="TC_homeLoanSelect" duration-ms="499" started-at="2020-11-28T07:56:34Z" finished-at="2020-11-28T07:56:35Z">
+        <test-method status="PASS" signature="TC_homeLoanSelect()[pri:1, instance:testScenarios.TS_PersonalLoan@6a400542]" name="TC_homeLoanSelect" duration-ms="419" started-at="2020-11-30T08:47:33Z" finished-at="2020-11-30T08:47:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_homeLoanSelect -->
-        <test-method status="PASS" signature="TC_EnterDetails()[pri:2, instance:tests.TS_PersonalLoan@6a400542]" name="TC_EnterDetails" duration-ms="2018" started-at="2020-11-28T07:56:35Z" finished-at="2020-11-28T07:56:37Z">
+        <test-method status="PASS" signature="TC_EnterDetails()[pri:2, instance:testScenarios.TS_PersonalLoan@6a400542]" name="TC_EnterDetails" duration-ms="1984" started-at="2020-11-30T08:47:34Z" finished-at="2020-11-30T08:47:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_EnterDetails -->
-        <test-method status="PASS" signature="TC_ScrollDown()[pri:3, instance:tests.TS_PersonalLoan@6a400542]" name="TC_ScrollDown" duration-ms="142" started-at="2020-11-28T07:56:37Z" finished-at="2020-11-28T07:56:37Z">
+        <test-method status="PASS" signature="TC_ScrollDown()[pri:3, instance:testScenarios.TS_PersonalLoan@6a400542]" name="TC_ScrollDown" duration-ms="111" started-at="2020-11-30T08:47:36Z" finished-at="2020-11-30T08:47:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_ScrollDown -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:tests.TS_PersonalLoan@6a400542]" name="exitBrowser" is-config="true" duration-ms="1562" started-at="2020-11-28T07:56:38Z" finished-at="2020-11-28T07:56:39Z">
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:testScenarios.TS_PersonalLoan@6a400542]" name="exitBrowser" is-config="true" duration-ms="1455" started-at="2020-11-30T08:47:36Z" finished-at="2020-11-30T08:47:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exitBrowser -->
-      </class> <!-- tests.TS_PersonalLoan -->
+      </class> <!-- testScenarios.TS_PersonalLoan -->
     </test> <!-- Regresion_Test -->
   </suite> <!-- Regression_Suite -->
-  <suite name="Smoke_Suite (0)" duration-ms="37092" started-at="2020-11-28T02:26:51Z" finished-at="2020-11-28T02:27:28Z">
+  <suite name="Smoke_Suite (0)" duration-ms="31063" started-at="2020-11-30T03:17:48Z" finished-at="2020-11-30T03:18:19Z">
     <groups>
     </groups>
-    <test name="Smoke_Test" duration-ms="37092" started-at="2020-11-28T02:26:51Z" finished-at="2020-11-28T02:27:28Z">
-      <class name="tests.TS_HomeLoan">
-        <test-method status="PASS" signature="TC_homeLoanSelect()[pri:5, instance:tests.TS_HomeLoan@c267ef4]" name="TC_homeLoanSelect" duration-ms="484" started-at="2020-11-28T07:56:55Z" finished-at="2020-11-28T07:56:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_homeLoanSelect -->
-        <test-method status="PASS" signature="TC_readHomeLoanData()[pri:6, instance:tests.TS_HomeLoan@c267ef4]" name="TC_readHomeLoanData" duration-ms="2481" started-at="2020-11-28T07:56:55Z" finished-at="2020-11-28T07:56:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_readHomeLoanData -->
-        <test-method status="PASS" signature="TC_ScrollDown()[pri:7, instance:tests.TS_HomeLoan@c267ef4]" name="TC_ScrollDown" duration-ms="118" started-at="2020-11-28T07:56:58Z" finished-at="2020-11-28T07:56:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_ScrollDown -->
-        <test-method status="PASS" signature="TC_YearWiseData()[pri:8, instance:tests.TS_HomeLoan@c267ef4]" name="TC_YearWiseData" duration-ms="700" started-at="2020-11-28T07:56:58Z" finished-at="2020-11-28T07:56:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_YearWiseData -->
-      </class> <!-- tests.TS_HomeLoan -->
-      <class name="tests.TS_CarLoan">
-        <test-method status="PASS" signature="openWebsite(java.lang.String)[pri:0, instance:tests.TS_CarLoan@21de60b4]" name="openWebsite" is-config="true" duration-ms="11410" started-at="2020-11-28T07:56:39Z" finished-at="2020-11-28T07:56:51Z">
+    <test name="Smoke_Test" duration-ms="31063" started-at="2020-11-30T03:17:48Z" finished-at="2020-11-30T03:18:19Z">
+      <class name="testScenarios.TS_CarLoan">
+        <test-method status="PASS" signature="openWebsite(java.lang.String)[pri:0, instance:testScenarios.TS_CarLoan@21de60b4]" name="openWebsite" is-config="true" duration-ms="10269" started-at="2020-11-30T08:47:38Z" finished-at="2020-11-30T08:47:48Z">
           <params>
             <param index="0">
               <value>
@@ -213,57 +195,75 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openWebsite -->
-        <test-method status="PASS" signature="TC_initiate()[pri:0, instance:tests.TS_CarLoan@21de60b4]" name="TC_initiate" is-config="true" duration-ms="1" started-at="2020-11-28T07:56:51Z" finished-at="2020-11-28T07:56:51Z">
+        <test-method status="PASS" signature="TC_initiate()[pri:0, instance:testScenarios.TS_CarLoan@21de60b4]" name="TC_initiate" is-config="true" duration-ms="2" started-at="2020-11-30T08:47:48Z" finished-at="2020-11-30T08:47:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_initiate -->
-        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:tests.TS_HomeLoan@c267ef4]" name="TC_initiateClasses" is-config="true" duration-ms="1" started-at="2020-11-28T07:56:51Z" finished-at="2020-11-28T07:56:51Z">
+        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:testScenarios.TS_HomeLoan@c267ef4]" name="TC_initiateClasses" is-config="true" duration-ms="1" started-at="2020-11-30T08:47:48Z" finished-at="2020-11-30T08:47:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_initiateClasses -->
-        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:tests.TS_UICheck@30ee2816]" name="TC_initiateClasses" is-config="true" duration-ms="2" started-at="2020-11-28T07:56:51Z" finished-at="2020-11-28T07:56:51Z">
+        <test-method status="PASS" signature="TC_initiateClasses()[pri:0, instance:testScenarios.TS_UICheck@30ee2816]" name="TC_initiateClasses" is-config="true" duration-ms="1" started-at="2020-11-30T08:47:48Z" finished-at="2020-11-30T08:47:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_initiateClasses -->
-        <test-method status="PASS" signature="TC_CarLoanSelect()[pri:1, instance:tests.TS_CarLoan@21de60b4]" name="TC_CarLoanSelect" duration-ms="538" started-at="2020-11-28T07:56:51Z" finished-at="2020-11-28T07:56:51Z">
+        <test-method status="PASS" signature="TC_CarLoanSelect()[pri:1, instance:testScenarios.TS_CarLoan@21de60b4]" name="TC_CarLoanSelect" duration-ms="634" started-at="2020-11-30T08:47:48Z" finished-at="2020-11-30T08:47:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CarLoanSelect -->
-        <test-method status="PASS" signature="TC_EnterDetails()[pri:2, instance:tests.TS_CarLoan@21de60b4]" name="TC_EnterDetails" duration-ms="2065" started-at="2020-11-28T07:56:51Z" finished-at="2020-11-28T07:56:53Z">
+        <test-method status="PASS" signature="TC_EnterDetails()[pri:2, instance:testScenarios.TS_CarLoan@21de60b4]" name="TC_EnterDetails" duration-ms="1973" started-at="2020-11-30T08:47:49Z" finished-at="2020-11-30T08:47:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_EnterDetails -->
-        <test-method status="PASS" signature="TC_SelectMonth()[pri:3, instance:tests.TS_CarLoan@21de60b4]" name="TC_SelectMonth" duration-ms="831" started-at="2020-11-28T07:56:53Z" finished-at="2020-11-28T07:56:54Z">
+        <test-method status="PASS" signature="TC_SelectMonth()[pri:3, instance:testScenarios.TS_CarLoan@21de60b4]" name="TC_SelectMonth" duration-ms="1000" started-at="2020-11-30T08:47:51Z" finished-at="2020-11-30T08:47:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SelectMonth -->
-        <test-method status="PASS" signature="TC_DisplayResult()[pri:4, instance:tests.TS_CarLoan@21de60b4]" name="TC_DisplayResult" duration-ms="149" started-at="2020-11-28T07:56:54Z" finished-at="2020-11-28T07:56:55Z">
+        <test-method status="PASS" signature="TC_DisplayResult()[pri:4, instance:testScenarios.TS_CarLoan@21de60b4]" name="TC_DisplayResult" duration-ms="262" started-at="2020-11-30T08:47:52Z" finished-at="2020-11-30T08:47:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_DisplayResult -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:tests.TS_CarLoan@21de60b4]" name="exitBrowser" is-config="true" duration-ms="1765" started-at="2020-11-28T07:57:28Z" finished-at="2020-11-28T07:57:29Z">
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:testScenarios.TS_CarLoan@21de60b4]" name="exitBrowser" is-config="true" duration-ms="1558" started-at="2020-11-30T08:48:19Z" finished-at="2020-11-30T08:48:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exitBrowser -->
-      </class> <!-- tests.TS_CarLoan -->
-      <class name="tests.TS_UICheck">
-        <test-method status="PASS" signature="TC_SelectLoanCalculator()[pri:9, instance:tests.TS_UICheck@30ee2816]" name="TC_SelectLoanCalculator" duration-ms="12900" started-at="2020-11-28T07:56:59Z" finished-at="2020-11-28T07:57:12Z">
+      </class> <!-- testScenarios.TS_CarLoan -->
+      <class name="testScenarios.TS_UICheck">
+        <test-method status="PASS" signature="TC_SelectLoanCalculator()[pri:9, instance:testScenarios.TS_UICheck@30ee2816]" name="TC_SelectLoanCalculator" duration-ms="6925" started-at="2020-11-30T08:47:56Z" finished-at="2020-11-30T08:48:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SelectLoanCalculator -->
-        <test-method status="PASS" signature="TC_EMICalculator()[pri:10, instance:tests.TS_UICheck@30ee2816]" name="TC_EMICalculator" duration-ms="5154" started-at="2020-11-28T07:57:12Z" finished-at="2020-11-28T07:57:18Z">
+        <test-method status="PASS" signature="TC_EMICalculator()[pri:10, instance:testScenarios.TS_UICheck@30ee2816]" name="TC_EMICalculator" duration-ms="5219" started-at="2020-11-30T08:48:04Z" finished-at="2020-11-30T08:48:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_EMICalculator -->
-        <test-method status="PASS" signature="TC_LoanAmountCalculator()[pri:11, instance:tests.TS_UICheck@30ee2816]" name="TC_LoanAmountCalculator" duration-ms="4800" started-at="2020-11-28T07:57:18Z" finished-at="2020-11-28T07:57:23Z">
+        <test-method status="PASS" signature="TC_LoanAmountCalculator()[pri:11, instance:testScenarios.TS_UICheck@30ee2816]" name="TC_LoanAmountCalculator" duration-ms="4905" started-at="2020-11-30T08:48:09Z" finished-at="2020-11-30T08:48:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LoanAmountCalculator -->
-        <test-method status="PASS" signature="TC_LoanTenureCalculator()[pri:12, instance:tests.TS_UICheck@30ee2816]" name="TC_LoanTenureCalculator" duration-ms="4787" started-at="2020-11-28T07:57:23Z" finished-at="2020-11-28T07:57:27Z">
+        <test-method status="PASS" signature="TC_LoanTenureCalculator()[pri:12, instance:testScenarios.TS_UICheck@30ee2816]" name="TC_LoanTenureCalculator" duration-ms="5079" started-at="2020-11-30T08:48:14Z" finished-at="2020-11-30T08:48:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LoanTenureCalculator -->
-      </class> <!-- tests.TS_UICheck -->
+      </class> <!-- testScenarios.TS_UICheck -->
+      <class name="testScenarios.TS_HomeLoan">
+        <test-method status="PASS" signature="TC_homeLoanSelect()[pri:5, instance:testScenarios.TS_HomeLoan@c267ef4]" name="TC_homeLoanSelect" duration-ms="394" started-at="2020-11-30T08:47:53Z" finished-at="2020-11-30T08:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_homeLoanSelect -->
+        <test-method status="PASS" signature="TC_readHomeLoanData()[pri:6, instance:testScenarios.TS_HomeLoan@c267ef4]" name="TC_readHomeLoanData" duration-ms="2044" started-at="2020-11-30T08:47:53Z" finished-at="2020-11-30T08:47:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_readHomeLoanData -->
+        <test-method status="PASS" signature="TC_ScrollDown()[pri:7, instance:testScenarios.TS_HomeLoan@c267ef4]" name="TC_ScrollDown" duration-ms="104" started-at="2020-11-30T08:47:55Z" finished-at="2020-11-30T08:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ScrollDown -->
+        <test-method status="PASS" signature="TC_YearWiseData()[pri:8, instance:testScenarios.TS_HomeLoan@c267ef4]" name="TC_YearWiseData" duration-ms="704" started-at="2020-11-30T08:47:56Z" finished-at="2020-11-30T08:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_YearWiseData -->
+      </class> <!-- testScenarios.TS_HomeLoan -->
     </test> <!-- Smoke_Test -->
   </suite> <!-- Smoke_Suite (0) -->
 </testng-results>
