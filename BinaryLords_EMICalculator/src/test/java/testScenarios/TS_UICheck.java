@@ -19,15 +19,15 @@ public class TS_UICheck extends DriverSetup {
 	}
 	
 	@Test(priority=9)
-	public void TC_SelectLoanCalculator(){
+	public void TC_selectLoanCalculator(){
 		details3.scrollUp();
 		details3.selectLoanCalculator();
 	
 	}
 	
 	@Test(priority=10)
-	public void TC_EMICalculator() throws Exception{
-		details3.selectCalculator("EMICalculator");
+	public void TC_emiCalculator() throws Exception{
+		details3.selectCalculator("emiCalculator");
 		
 		details3.checkLoanAmtTextBox("5000", "//input[@id='loanamount']");
 		details3.checkInterestRateTextBox("2.5", "//input[@id='loaninterest']");
@@ -43,8 +43,8 @@ public class TS_UICheck extends DriverSetup {
 		}
 	
 	@Test(priority=11)
-	public void TC_LoanAmountCalculator () throws Exception{
-		details3.selectCalculator("LoanAmountCalculator");
+	public void TC_loanAmountCalculator () throws Exception{
+		details3.selectCalculator("loanAmountCalculator");
 		
 		details3.checkEMITextBox("4999.92", "//input[@id='loanemi']");
 		details3.checkInterestRateTextBox("2.5", "//input[@id='loaninterest']");
@@ -59,8 +59,8 @@ public class TS_UICheck extends DriverSetup {
 		
 		}
 	@Test(priority=12)
-	public void TC_LoanTenureCalculator () throws Exception{
-		details3.selectCalculator("LoanTenureCalculator");
+	public void TC_loanTenureCalculator () throws Exception{
+		details3.selectCalculator("loanTenureCalculator");
 		
 		details3.checkLoanAmtTextBox("5000", "//input[@id='loanamount']"); 
 		details3.checkInterestRateTextBox("2.5", "//input[@id='loaninterest']");

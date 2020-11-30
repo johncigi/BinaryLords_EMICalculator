@@ -17,20 +17,20 @@ public class TS_PersonalLoan extends DriverSetup{
 	}
 	
 	@Test(priority=1)
-	public void TC_homeLoanSelect()
+	public void TC_personalLoanSelect()
 	{
 		details2.selectPersonalLoan();
 		
 	}
 	
 	@Test(priority=2)
-	public void TC_EnterDetails() {
+	public void TC_enterDetails() {
 		details.enterDetails("2000000","7.5","2");
 		
 	}
 	
 	@Test(priority=3)
-	public void TC_ScrollDown()
+	public void TC_scrollDown()
 	{
 		details2.scrollDown();
 	}

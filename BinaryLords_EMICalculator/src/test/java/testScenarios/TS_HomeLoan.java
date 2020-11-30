@@ -33,13 +33,13 @@ public class TS_HomeLoan extends DriverSetup{
 	}
 	
 	@Test(priority=7)
-	public void TC_ScrollDown()
+	public void TC_scrollDown()
 	{
 		details2.scrollDown();
 	}
 	
 	@Test(priority=8)
-	public void TC_YearWiseData()
+	public void TC_yearWiseData()
 	{
 		details2.writeYearWiseData();
 		

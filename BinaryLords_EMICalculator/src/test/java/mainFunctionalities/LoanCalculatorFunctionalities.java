@@ -21,8 +21,8 @@ public class LoanCalculatorFunctionalities extends Utilities
 	public void scrollUp()
 	{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		WebElement Element=driver.findElement(By.xpath(config.getProperty("homeLoan")));
-		js.executeScript("arguments[0].scrollIntoView();", Element);
+		WebElement element=driver.findElement(By.xpath(config.getProperty("homeLoan")));
+		js.executeScript("arguments[0].scrollIntoView();", element);
 		waitElementClickable(config.getProperty("homeLoan"));
 	}
 	
@@ -31,11 +31,11 @@ public class LoanCalculatorFunctionalities extends Utilities
 	   */
 	public void selectLoanCalculator()
 	{
-		waitElementClickable(config.getProperty("LoanCalculator"));
-		driver.findElement(By.xpath(config.getProperty("LoanCalculator"))).click();
+		waitElementClickable(config.getProperty("loanCalculator"));
+		driver.findElement(By.xpath(config.getProperty("loanCalculator"))).click();
 		driver.navigate().refresh();
-		waitElementClickable(config.getProperty("LoanCalculator"));
-		driver.findElement(By.xpath(config.getProperty("LoanCalculator"))).click();
+		waitElementClickable(config.getProperty("loanCalculator"));
+		driver.findElement(By.xpath(config.getProperty("loanCalculator"))).click();
 	}
 	
 	/*

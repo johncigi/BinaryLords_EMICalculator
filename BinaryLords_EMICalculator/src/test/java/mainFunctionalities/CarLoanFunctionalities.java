@@ -27,7 +27,7 @@ public class CarLoanFunctionalities extends Utilities {
 	/*
 	 * Entering Car Loan Amount, Interest Rate and Loan Tenure details
 	 */
-	public void enterDetails(String Amount, String IR,String Tenure)  
+	public void enterDetails(String amount, String ir,String tenure)  
 	{
 		WebElement loanAmount, interestRate, loanTenure;
 		
@@ -36,7 +36,7 @@ public class CarLoanFunctionalities extends Utilities {
 				 (By.id("loanamount"))));
 		loanAmount = driver.findElement(By.id("loanamount"));
 		loanAmount.clear();
-		loanAmount.sendKeys(Amount);
+		loanAmount.sendKeys(amount);
 		
 		interestRate=driver.findElement(By.id("loaninterest"));
 		wait.until(ExpectedConditions.presenceOfElementLocated(
@@ -44,7 +44,7 @@ public class CarLoanFunctionalities extends Utilities {
 		interestRate.click();
 		interestRate.sendKeys(Keys.chord(Keys.CONTROL,"a"));
 		interestRate.sendKeys(Keys.DELETE);
-		interestRate.sendKeys(IR);
+		interestRate.sendKeys(ir);
 		
 		loanTenure=driver.findElement(By.id("loanterm"));
 		wait.until(ExpectedConditions.presenceOfElementLocated(
@@ -52,7 +52,7 @@ public class CarLoanFunctionalities extends Utilities {
 		loanTenure.click();
 		loanTenure.sendKeys(Keys.chord(Keys.CONTROL,"a"));
 		loanTenure.sendKeys(Keys.DELETE);
-		loanTenure.sendKeys(Tenure);
+		loanTenure.sendKeys(tenure);
 		loanTenure.sendKeys(Keys.TAB);
 			
 	}
@@ -63,8 +63,8 @@ public class CarLoanFunctionalities extends Utilities {
 	public void scrollDown()
 	{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		WebElement Element=driver.findElement(By.id("yearheader"));
-		js.executeScript("arguments[0].scrollIntoView();", Element);
+		WebElement element=driver.findElement(By.id("yearheader"));
+		js.executeScript("arguments[0].scrollIntoView();", element);
 		
 		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.elementToBeClickable(
@@ -94,11 +94,11 @@ public class CarLoanFunctionalities extends Utilities {
 		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.elementToBeClickable(
 		        (By.xpath("//*[@class='row no-margin yearlypaymentdetails']/td[1]"))));
-		String principal =driver.findElement(By.xpath(config.getProperty("principalamount"))).getText();
+		String principal =driver.findElement(By.xpath(config.getProperty("principalAmount"))).getText();
 		String principal1=principal.substring(1, principal.length()); 
 	    System.out.println("Principal amount for first month: Rs"+principal1);
 		
-		String interest = driver.findElement(By.xpath(config.getProperty("interestamount"))).getText();
+		String interest = driver.findElement(By.xpath(config.getProperty("interestAmount"))).getText();
 		String interest1=interest.substring(1, interest.length());
 	    System.out.println("Interest amount for first month: Rs"+interest1);
 	   

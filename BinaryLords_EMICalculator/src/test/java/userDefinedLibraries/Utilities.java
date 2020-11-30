@@ -93,6 +93,7 @@ public class Utilities {
 	 * Method to integrate selenium grid
 	 */
 	
+	
 	/*public static WebDriver GridDriver() throws MalformedURLException {
 		if(browse.equalsIgnoreCase("chrome")){
 		String nodeUrl="http://192.168.1.12:4446/wd/hub";

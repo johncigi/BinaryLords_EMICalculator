@@ -21,8 +21,8 @@ public class HomeLoanFunctionalities extends Utilities
 	public void scrollUp()
 	{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		WebElement Element=driver.findElement(By.xpath(config.getProperty("homeLoan")));
-		js.executeScript("arguments[0].scrollIntoView();", Element);
+		WebElement element=driver.findElement(By.xpath(config.getProperty("homeLoan")));
+		js.executeScript("arguments[0].scrollIntoView();", element);
 		waitElementClickable(config.getProperty("homeLoan"));
 	}
 	
@@ -51,7 +51,7 @@ public class HomeLoanFunctionalities extends Utilities
 				 (By.id("loanamount"))));
 		loanAmount = driver.findElement(By.id("loanamount"));
 		loanAmount.clear();
-		loanAmount.sendKeys(in.ReadExcelData(row, column++));
+		loanAmount.sendKeys(in.readExcelData(row, column++));
 		
 		interestRate=driver.findElement(By.id("loaninterest"));
 		wait.until(ExpectedConditions.presenceOfElementLocated(
@@ -59,7 +59,7 @@ public class HomeLoanFunctionalities extends Utilities
 		interestRate.click();
 		interestRate.sendKeys(Keys.chord(Keys.CONTROL,"a"));
 		interestRate.sendKeys(Keys.DELETE);
-		interestRate.sendKeys(in.ReadExcelData(row, column++));
+		interestRate.sendKeys(in.readExcelData(row, column++));
 		
 		loanTenure=driver.findElement(By.id("loanterm"));
 		wait.until(ExpectedConditions.presenceOfElementLocated(
@@ -67,7 +67,7 @@ public class HomeLoanFunctionalities extends Utilities
 		loanTenure.click();
 		loanTenure.sendKeys(Keys.chord(Keys.CONTROL,"a"));
 		loanTenure.sendKeys(Keys.DELETE);
-		loanTenure.sendKeys(in.ReadExcelData(row, column++));
+		loanTenure.sendKeys(in.readExcelData(row, column++));
 		loanTenure.sendKeys(Keys.TAB);
 			
 	}
@@ -78,8 +78,8 @@ public class HomeLoanFunctionalities extends Utilities
 	public void scrollDown()
 	{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		WebElement Element=driver.findElement(By.id("yearheader"));
-		js.executeScript("arguments[0].scrollIntoView();", Element);
+		WebElement element=driver.findElement(By.id("yearheader"));
+		js.executeScript("arguments[0].scrollIntoView();", element);
 		
 		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.elementToBeClickable(
@@ -93,7 +93,7 @@ public class HomeLoanFunctionalities extends Utilities
 	public void writeYearWiseData()
 	{
 	  Input in=new Input();
-	  String tenure1=in.ReadExcelData(1,2);
+	  String tenure1=in.readExcelData(1,2);
 	  int tenure=Integer.parseInt(tenure1);
 	  for(int m=1;m<=(tenure*2);m++)
 	  {
@@ -120,8 +120,8 @@ public class HomeLoanFunctionalities extends Utilities
 	
 	public void selectPersonalLoan() 
 	{
-		waitElementClickable(config.getProperty("PersoanlLoan"));
-		driver.findElement(By.xpath(config.getProperty("PersoanlLoan"))).click();
+		waitElementClickable(config.getProperty("personalLoan"));
+		driver.findElement(By.xpath(config.getProperty("personalLoan"))).click();
 		
 	}
 	

@@ -15,7 +15,7 @@ public class Input
 {
 	public static String[] data=new String[3];
 	
-	public String ReadExcelData(int vRow, int vColumn)
+	public String readExcelData(int vRow, int vColumn)
 	{
 		String value=null;
 		DataFormatter formatter = new DataFormatter();
