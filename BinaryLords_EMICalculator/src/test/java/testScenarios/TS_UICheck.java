@@ -33,6 +33,7 @@ public class TS_UICheck extends DriverSetup {
 		details3.checkInterestRateTextBox("2.5", "//input[@id='loaninterest']");
 		details3.checkLoanTenureTextBox("6", "//input[@id='loanterm']");
 		details3.checkFeesChargesTextBox("5000", "//input[@id='loanfees']");
+		System.out.println("EMI Calculator textboxes are checked");
 		
 		details3.checkLoanAmtSlider("//div[@id='loanamountslider']","//input[@id='loanamount']","EMI Calculator");
 		details3.checkInterestRateSlider("//div[@id='loaninterestslider']","//input[@id='loaninterest']","EMI Calculator");
@@ -49,6 +50,7 @@ public class TS_UICheck extends DriverSetup {
 		details3.checkInterestRateTextBox("2.5", "//input[@id='loaninterest']");
 		details3.checkLoanTenureTextBox1("6", "//input[@id='loanterm']");
 		details3.checkFeesChargesTextBox("5000", "//input[@id='loanfees']");
+		System.out.println("Loan Amount Calculator textboxes are checked");
 		
 	    details3.checkEMISlider("//div[@id='loanemislider']","//input[@id='loanemi']","Loan Amount Calculator");
 		details3.checkInterestRateSlider("//div[@id='loaninterestslider']","//input[@id='loaninterest']","Loan Amount Calculator");
@@ -64,6 +66,7 @@ public class TS_UICheck extends DriverSetup {
 		details3.checkInterestRateTextBox("2.5", "//input[@id='loaninterest']");
 		details3.checkFeesChargesTextBox("5000", "//input[@id='loanfees']");
 		details3.checkEMITextBox("5010.42", "//input[@id='loanemi']");
+		System.out.println("Loan Tenure Calculator textboxes are checked");
 		
 		details3.checkLoanAmtSlider("//div[@id='loanamountslider']","//input[@id='loanamount']","Loan Tenure Calculator");
 		details3.checkEMISlider("//div[@id='loanemislider']","//input[@id='loanemi']","Loan Tenure Calculator");
