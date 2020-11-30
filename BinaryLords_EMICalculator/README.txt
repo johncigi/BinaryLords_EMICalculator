@@ -142,14 +142,17 @@ Car Loan File created successfully
 ************************************************************
 Home Loan File created successfully
 ************************************************************
+EMI Calculator textboxes are checked
 EMI Calculator slider for loanamount is working and the value is being reflecting in the textbox: 1,03,00,000
 EMI Calculator slider for loaninterest is working and the value is being reflecting in the textbox: 10.25
 EMI Calculator slider for loantenure is working and the value is being reflecting in the textbox: 186
 EMI Calculator slider for loanfees is working and the value is being reflecting in the textbox: 51,500
+Loan Amount Calculator textboxes are checked
 Loan Amount Calculator slider for loanemi is working and the value is being reflecting in the textbox: 51,499.94
 Loan Amount Calculator slider for loaninterest is working and the value is being reflecting in the textbox: 10.25
 Loan Amount Calculator slider for loantenure is working and the value is being reflecting in the textbox: 186
 Loan Amount Calculator slider for loanfees is working and the value is being reflecting in the textbox: 51,500
+Loan Tenure Calculator textboxes are checked
 Loan Tenure Calculator slider for loanamount is working and the value is being reflecting in the textbox: 1,03,00,000
 Loan Tenure Calculator slider for loanemi is working and the value is being reflecting in the textbox: 51,498.16
 Loan Tenure Calculator slider for loantenure is working and the value is being reflecting in the textbox: 10.25
@@ -162,14 +165,17 @@ Car Loan File created successfully
 ************************************************************
 Home Loan File created successfully
 ************************************************************
+EMI Calculator textboxes are checked
 EMI Calculator slider for loanamount is working and the value is being reflecting in the textbox: 1,03,00,000
 EMI Calculator slider for loaninterest is working and the value is being reflecting in the textbox: 10.25
 EMI Calculator slider for loantenure is working and the value is being reflecting in the textbox: 186
 EMI Calculator slider for loanfees is working and the value is being reflecting in the textbox: 51,500
+Loan Amount Calculator textboxes are checked
 Loan Amount Calculator slider for loanemi is working and the value is being reflecting in the textbox: 51,499.94
 Loan Amount Calculator slider for loaninterest is working and the value is being reflecting in the textbox: 10.25
 Loan Amount Calculator slider for loantenure is working and the value is being reflecting in the textbox: 186
 Loan Amount Calculator slider for loanfees is working and the value is being reflecting in the textbox: 51,500
+Loan Tenure Calculator textboxes are checked
 Loan Tenure Calculator slider for loanamount is working and the value is being reflecting in the textbox: 1,03,00,000
 Loan Tenure Calculator slider for loanemi is working and the value is being reflecting in the textbox: 51,498.16
 Loan Tenure Calculator slider for loantenure is working and the value is being reflecting in the textbox: 10.25
