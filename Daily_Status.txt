@@ -1,0 +1,24 @@
+
+Hackathon Project Daily Update
+=========================================
+
+
+
+5-11-2020(Thursday) ---------------------------------  Topic, Website (JustDial) and team name selected
+
+6-11-2020(Friday)-----------------------------------  Website manual testing
+
+7-11-2020(Saturday) and 9-11-2020(Monday) ----------  Test cases report and Requirement documents
+
+10-11-2020(Tuesday)---------------------------------  Automation Feasibility report and Test Plan report
+
+11-11-2020(Wednesday) to 12-11-2020(Thursday)-------  Started with java coding. But due to some problems of the website while automating, I mailed 
+                                                      princy and Lakshmi(trainer)for changing the hackathon topic.
+
+16-11-2020(Monday) --------------------------------- Changed topic to "Finding interest amount" and website choosen is "EMICalculator" and testcases report were started 
+
+18-11-2020(Wednesday) to 26-11-2020(Thursday)------- Automation coding with Maven, testNG, git, selenium grid got completed. Also extent report were also added
+
+27-11-2020(Friday) and 28-11-2020(Saturday)--------- Required documents and reports were made. Work started on jenkins. 
+
+8-11-2020(Tuesday) and 9-11-2020(Wednesday)---------- 
