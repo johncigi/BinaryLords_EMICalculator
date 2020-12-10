@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+
 //import java.net.MalformedURLException;
 //import java.net.URL;
 import java.util.Properties;
@@ -18,6 +19,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
+
 //import org.openqa.selenium.remote.DesiredCapabilities;
 //import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -87,14 +89,14 @@ public class Utilities {
         // Maximize window
 		driver.manage().window().maximize();
 		return driver;
-	}
+	}                                                             
 	                                                                    
 	/*
 	 * Method to integrate selenium grid
 	 */
 	
 	
-	/*public static WebDriver GridDriver() throws MalformedURLException {
+/*	public static WebDriver GridDriver() throws MalformedURLException {
 		if(browse.equalsIgnoreCase("chrome")){
 		String nodeUrl="http://192.168.1.12:4446/wd/hub";
 		DesiredCapabilities capabilities= DesiredCapabilities.chrome();
@@ -113,7 +115,7 @@ public class Utilities {
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		return driver;
-	} */                                                                            
+	}     */                                                                        
 	
 	
 	/*
