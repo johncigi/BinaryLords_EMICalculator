@@ -94,9 +94,9 @@ public class HomeLoanFunctionalities extends Utilities
 	   {
 		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(
-		(By.xpath(config.getProperty("homeLoanDetails")))));
+		(By.xpath("//*[@id='emipaymenttable']/table/tbody/tr["+n+"]/td["+i+"]"))));
 		
-		ele1=driver.findElement(By.xpath(config.getProperty("homeLoanDetails")));
+		ele1=driver.findElement(By.xpath("//*[@id='emipaymenttable']/table/tbody/tr["+n+"]/td["+i+"]"));
 		try {
 		SendToExcel.sendData1(ele1,n,i, "HomeLoan", "YEAR", "PRINCIPAL AMOUNT","INTEREST AMOUNT","TOTAL PAYMENT","BALANCE","Loan Paid To Date");
 		} catch (IOException e) {
