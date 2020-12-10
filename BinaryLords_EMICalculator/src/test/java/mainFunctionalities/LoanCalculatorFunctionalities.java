@@ -70,7 +70,7 @@ public class LoanCalculatorFunctionalities extends Utilities
 	{
 		WebElement tenure = ch.checkText(amount, xpath);
 		WebDriverWait wait = new WebDriverWait(driver,30);
-		WebElement month = driver.findElement(By.xpath("//*[@id='ltermwrapper']/div[1]/div/div/div/div/div/label[2]"));
+		WebElement month = driver.findElement(By.xpath(config.getProperty("month")));
 		wait.until(ExpectedConditions.elementToBeClickable(month));
 		month.click();
 		Assert.assertEquals(tenure.getAttribute("value"), "72");
@@ -82,7 +82,7 @@ public class LoanCalculatorFunctionalities extends Utilities
 	public void checkLoanTenureTextBox1(String amount, String xpath) {
 		WebElement tenure = ch.checkText(amount, xpath);
 		WebDriverWait wait = new WebDriverWait(driver,30);
-		WebElement month = driver.findElement(By.xpath("//*[@id='ltermwrapper']/div[1]/div/div/div/div/div/label[2]"));
+		WebElement month = driver.findElement(By.xpath(config.getProperty("month")));
 		wait.until(ExpectedConditions.elementToBeClickable(month));
 		month.click();
 		Assert.assertEquals(tenure.getAttribute("value"), "6");

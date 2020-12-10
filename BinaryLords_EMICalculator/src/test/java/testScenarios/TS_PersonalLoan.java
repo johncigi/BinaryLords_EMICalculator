@@ -1,7 +1,9 @@
 package testScenarios;
+
+
+
 import mainFunctionalities.CarLoanFunctionalities;
 import mainFunctionalities.HomeLoanFunctionalities;
-
 import org.testng.annotations.*;
 
 public class TS_PersonalLoan extends DriverSetup{
@@ -19,8 +21,7 @@ public class TS_PersonalLoan extends DriverSetup{
 	@Test(priority=1)
 	public void TC_personalLoanSelect()
 	{
-		details2.selectPersonalLoan();
-		
+		details.selectLoan("personalLoan");
 	}
 	
 	@Test(priority=2)

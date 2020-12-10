@@ -16,7 +16,7 @@ public  CarLoanFunctionalities details;
 	
 	@Test(priority=1)
 	public void TC_carLoanSelect() {
-		details.selectCarLoan();
+		details.selectLoan("carLoan");
 	}
 	
 	@Test(priority=2)

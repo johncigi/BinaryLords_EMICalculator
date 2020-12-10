@@ -26,16 +26,8 @@ public class HomeLoanFunctionalities extends Utilities
 		waitElementClickable(config.getProperty("homeLoan"));
 	}
 	
-   /*
-    * Selection of Home Loan Option from the main menu
-	*/
-	public void selectHomeLoan() 
-	{
-		waitElementClickable(config.getProperty("homeLoan"));
-		driver.findElement(By.xpath(config.getProperty("homeLoan"))).click();
-		
-	}
-	
+   
+
 	/*
 	 * Entering the Home Loan Amount, Interest Rate and Loan Tenure details by reading from /Input/Input.xlsx file
 	 */
@@ -102,9 +94,9 @@ public class HomeLoanFunctionalities extends Utilities
 	   {
 		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(
-		(By.xpath("//*[@id='emipaymenttable']/table/tbody/tr["+n+"]/td["+i+"]"))));
-				
-		ele1=driver.findElement(By.xpath("//*[@id='emipaymenttable']/table/tbody/tr["+n+"]/td["+i+"]"));
+		(By.xpath(config.getProperty("homeLoanDetails")))));
+		
+		ele1=driver.findElement(By.xpath(config.getProperty("homeLoanDetails")));
 		try {
 		SendToExcel.sendData1(ele1,n,i, "HomeLoan", "YEAR", "PRINCIPAL AMOUNT","INTEREST AMOUNT","TOTAL PAYMENT","BALANCE","Loan Paid To Date");
 		} catch (IOException e) {
@@ -118,11 +110,7 @@ public class HomeLoanFunctionalities extends Utilities
 		System.out.println("************************************************************");
 	}
 	
-	public void selectPersonalLoan() 
-	{
-		waitElementClickable(config.getProperty("personalLoan"));
-		driver.findElement(By.xpath(config.getProperty("personalLoan"))).click();
-		
-	}
+	
+	
 	
 }

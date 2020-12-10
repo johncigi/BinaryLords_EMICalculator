@@ -6,6 +6,7 @@ import mainFunctionalities.HomeLoanFunctionalities;
 
 import org.testng.annotations.*;
 
+
 public class TS_HomeLoan extends DriverSetup{
 	
 	public HomeLoanFunctionalities details2;
@@ -15,30 +16,31 @@ public class TS_HomeLoan extends DriverSetup{
 	public void TC_initiateClasses()
 	{
 	   details2 = new HomeLoanFunctionalities();
+	   details= new CarLoanFunctionalities();
 	}
 	
-	@Test(priority=5)
+	@Test(priority=1)  
 	public void TC_homeLoanSelect()
 	{
 		
 		details2.scrollUp();
-		details2.selectHomeLoan();
+		details.selectLoan("homeLoan");
 		
 	}
 	
-	@Test(priority=6)
+	@Test(priority=2)
 	public void TC_readHomeLoanData ()
 	{
 		details2.inputData("HomeLoan");
 	}
 	
-	@Test(priority=7)
+	@Test(priority=3)
 	public void TC_scrollDown()
 	{
 		details2.scrollDown();
 	}
 	
-	@Test(priority=8)
+	@Test(priority=4)            
 	public void TC_yearWiseData()
 	{
 		details2.writeYearWiseData();

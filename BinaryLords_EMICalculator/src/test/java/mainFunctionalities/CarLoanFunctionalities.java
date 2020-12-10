@@ -15,13 +15,13 @@ import userDefinedLibraries.*;
 public class CarLoanFunctionalities extends Utilities {
 	
 	/*
-	 * Selection of Car Loan Option from the main menu
+	 * Selection of  Loan Option from the main menu
 	 */
 
-	public void selectCarLoan()
+	public void selectLoan(String loan)
 	{
-		waitElementClickable(config.getProperty("carLoan"));
-		driver.findElement(By.xpath(config.getProperty("carLoan"))).click();
+		waitElementClickable(config.getProperty(loan));
+		driver.findElement(By.xpath(config.getProperty(loan))).click();
 	}
 	
 	/*
@@ -54,7 +54,6 @@ public class CarLoanFunctionalities extends Utilities {
 		loanTenure.sendKeys(Keys.DELETE);
 		loanTenure.sendKeys(tenure);
 		loanTenure.sendKeys(Keys.TAB);
-			
 	}
 	
 	/*
@@ -69,6 +68,7 @@ public class CarLoanFunctionalities extends Utilities {
 		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.elementToBeClickable(
 				 (By.id("yearheader"))));
+		
 	}
 	
 	/*
@@ -76,24 +76,21 @@ public class CarLoanFunctionalities extends Utilities {
 	 */
 	public void selectMonth()
 	{
-		List<WebElement> test=	driver.findElements(By.xpath("//*[@class='row no-margin yearlypaymentdetails']/td[1]"));
+		List<WebElement> test=	driver.findElements(By.xpath(config.getProperty("selectMonth")));
 		for(WebElement list:test)
 		{
-			list.click();
-			WebDriverWait wait=new WebDriverWait(driver,30);
-			wait.until(ExpectedConditions.elementToBeClickable(
-			(By.xpath("//*[@class='row no-margin yearlypaymentdetails']/td[1]"))));
+			waitElementClickable(config.getProperty("selectMonth"));
+            list.click();
 		}
 	}
+	
 	
 	/*
 	 * Entering the values of principal and interest amount for first month into excel file
 	 */
 	public void printResult()  
 	{
-		WebDriverWait wait=new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.elementToBeClickable(
-		        (By.xpath("//*[@class='row no-margin yearlypaymentdetails']/td[1]"))));
+		waitElementClickable(config.getProperty("selectMonth"));
 		String principal =driver.findElement(By.xpath(config.getProperty("principalAmount"))).getText();
 		String principal1=principal.substring(1, principal.length()); 
 	    System.out.println("Principal amount for first month: Rs"+principal1);

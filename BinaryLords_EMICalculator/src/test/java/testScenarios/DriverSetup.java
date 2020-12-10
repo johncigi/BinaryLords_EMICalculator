@@ -21,12 +21,12 @@ public class DriverSetup extends Utilities{
 		 DriverSetup.browse=browser;
 		 /*          For Selenium Grid       */
 		
-		 /*	try {
+		/* 	try {
 				driver=GridDriver();
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}                                   */                  
+			}                                  */                              
 		driver = getDriver(browser);
 		openUrl();	
 	}
